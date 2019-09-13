@@ -28,8 +28,18 @@
                     // },
                     {
                         type: 'link',
-                        label: 'Affiliation Checking',
+                        label: 'Dashboard',
                         icon: 'monitor',
+                        state: {
+                            to: 'admin.dashboard',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Affiliation Checking',
+                        icon: 'user-check',
                         state: {
                             to: 'admin.affiliationChecking',
                             params: {}
@@ -39,7 +49,7 @@
                     {
                         type: 'link',
                         label: 'Financial Analysis',
-                        icon: 'monitor',
+                        icon: 'pocket',
                         state: {
                             to: 'admin.financialAnalysis',
                             params: {}
@@ -49,7 +59,7 @@
                     {
                         type: 'link',
                         label: 'Collateral Analysis',
-                        icon: 'monitor',
+                        icon: 'square',
                         state: {
                             to: 'admin.collateralAnalysis',
                             params: {}
