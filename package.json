@@ -33,7 +33,6 @@
     "angular-ui-router": "^1.0.22",
     "d3": "^5.11.0",
     "datatables.net": "^1.10.19",
-    "datatables.net-responsive-dt": "^2.2.3",
     "normalize.css": "^8.0.1"
   }
 }

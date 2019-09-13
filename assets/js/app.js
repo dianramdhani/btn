@@ -1,30 +1,45 @@
-// LIBS
-require('../lib/jquery/jquery.min');
-require('../lib/bootstrap/js/bootstrap.bundle.min');
-require('../lib/feather-icons/feather.min');
-require('../lib/perfect-scrollbar/perfect-scrollbar.min');
-require('../lib/datatables.net/js/jquery.dataTables.min');
-require('../lib/datatables.net-dt/js/dataTables.dataTables.min');
-require('../lib/datatables.net-responsive/js/dataTables.responsive.min');
-require('datatables.net-responsive-dt')(window, $);
-require('../lib/jquery.flot/jquery.flot');
-require('../lib/jquery.flot/jquery.flot.stack');
-require('../lib/jquery.flot/jquery.flot.resize');
-require('../lib/chart.js/Chart.bundle.min');
-require('../lib/dashforge/js/dashforge.sampledata');
-require('../../node_modules/angular/angular');
-require('../../node_modules/angular-datatables/dist/angular-datatables');
-require('../../node_modules/angular-cookies/angular-cookies.min');
-require('../../node_modules/angular-ui-router/release/angular-ui-router.min');
-
-// INIT
+window.app = angular.module('BTN', ['ui.router', 'ngCookies', 'datatables']);
 
 // RUN
+(function () {
+    'use strict';
+
+    window.app
+        .run(Run);
+
+    Run.$inject = ['$state', '$rootScope', '$cookies', '$http'];
+    function Run($state, $rootScope, $cookies, $http) {
+        // $rootScope['global'] = {
+        //     user: angular.fromJson($cookies.get('user')),
+        //     menu: angular.fromJson($cookies.get('menu'))
+        // } || {};
+        // if (typeof $rootScope.global.user === 'undefined') {
+        //     $state.go('login');
+        // } else {
+        //     // $http.defaults.headers.common = { token: $rootScope.global.user.token };
+        //     $state.go('etl');
+        // }
+        $state.go('login');
+    }
+})();
 
 // ROUTES
+require('../routes/app.route');
+require('../routes/admin.route');
 
 // SERVICES
 
+// DIRECTIVES
+require('../directives/tr-files.directive');
+
 // COMPONENTS
+require('../components/tr-wrapper/tr-wrapper');
+require('../components/tr-loading/tr-loading');
 
 // VIEWS
+require('../views/login/login');
+require('../views/admin-container/admin-container');
+require('../views/affiliation-checking/affiliation-checking');
+require('../views/financial-analysis/financial-analysis');
+require('../views/collateral-analysis/collateral-analysis');
+require('../views/dashboard/dashboard');
