@@ -9,7 +9,7 @@
     function RouteApp($stateProvider) {
         [
             { name: 'login', url: '/login', component: 'login' },
-            { name: 'etl', url: '/etl', component: 'etlContainer' },
+            { name: 'admin', url: '/admin', component: 'adminContainer' },
         ]
             .forEach(state => $stateProvider.state(state));
     }
