@@ -40,3 +40,5 @@ require('../components/tr-loading/tr-loading');
 require('../views/login/login');
 require('../views/admin-container/admin-container');
 require('../views/affiliation-checking/affiliation-checking');
+require('../views/financial-analysis/financial-analysis');
+require('../views/collateral-analysis/collateral-analysis');

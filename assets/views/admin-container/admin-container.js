@@ -36,6 +36,26 @@
                         },
                         active: true
                     },
+                    {
+                        type: 'link',
+                        label: 'Financial Analysis',
+                        icon: 'monitor',
+                        state: {
+                            to: 'admin.financialAnalysis',
+                            params: {}
+                        },
+                        active: false
+                    },
+                    {
+                        type: 'link',
+                        label: 'Collateral Analysis',
+                        icon: 'monitor',
+                        state: {
+                            to: 'admin.collateralAnalysis',
+                            params: {}
+                        },
+                        active: false
+                    },
                 ]
             }
         };
