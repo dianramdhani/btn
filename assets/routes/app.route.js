@@ -9,7 +9,7 @@
     function RouteApp($stateProvider) {
         [
             { name: 'login', url: '/login', component: 'login' },
-            { name: 'admin', url: '/admin', component: 'adminContainer' },
+            { name: 'admin', url: '', component: 'adminContainer' },
         ]
             .forEach(state => $stateProvider.state(state));
     }
