@@ -1,9 +1,0 @@
-require('../../node_modules/normalize.css/normalize.css');
-require('../lib/@fortawesome/fontawesome-free/css/all.min.css');
-require('../lib/ionicons/css/ionicons.min.css');
-require('../lib/datatables.net-dt/css/jquery.dataTables.min.css');
-require('../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css');
-require('../lib/dashforge/css/dashforge.css');
-require('../lib/dashforge/css/dashforge.dashboard.css');
-require('../lib/dashforge/css/skin.cool.css');
-require('../css/tritronik.css');

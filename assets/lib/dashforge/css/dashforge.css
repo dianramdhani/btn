@@ -910,7 +910,7 @@ BUGS:
   font-family: 'Inter UI var';
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
-  src: url("../fonts/inter-ui/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Regular.woff") format("woff"); }
+  src: url("Inter-UI.var.woff2") format("woff2-variations"), url("Inter-UI.var.woff2") format("woff2"); }
 
 /* --------------------------------------------------------------------------
 
@@ -928,14 +928,14 @@ BUGS:
   font-weight: 100 900;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("../fonts/inter-ui/Inter-upright.var.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-upright.var.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-upright.var.woff2") format("woff2"); }
+  src: url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Inter UI var alt';
   font-weight: 100 900;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url("../fonts/inter-ui/Inter-UI-italic.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-UI-italic.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-UI-italic.woff2") format("woff2"); }
+  src: url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2"); }
 
 /* ############### BOOTSTRAP FRAMEWORK ############### */
 /*!
