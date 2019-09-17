@@ -12,6 +12,7 @@
             { name: 'admin.affiliationChecking', url: '/affiliation-checking', component: 'affiliationChecking' },
             { name: 'admin.financialAnalysis', url: '/financial-analysis', component: 'financialAnalysis' },
             { name: 'admin.collateralAnalysis', url: '/collateral-analysis', component: 'collateralAnalysis' },
+            { name: 'admin.detailCollateral', url: '/collateral-analysis/detail-collateral', component: 'detailCollateral' },
         ]
             .forEach(state => $stateProvider.state(state));
     }
