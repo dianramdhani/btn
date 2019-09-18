@@ -7,5 +7,37 @@
         </ol>
     </nav>
 </div>
-<div class="row row-xs">
+<div class="card">
+    <h6 class="card-header bd-b-0">List Creditor</h6>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="tx-gray-500">Credit Application No.</th>
+                    <th class="tx-gray-500">Name of Applicant</th>
+                    <th class="tx-gray-500">Product Name</th>
+                    <th class="tx-gray-500 tx-right">Plafon</th>
+                    <th class="tx-gray-500">Time Period (Month)</th>
+                    <th class="tx-gray-500">Purpose of The Loan</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>32P2195001701130005</td>
+                    <td>RAMON DOK</td>
+                    <td>Dana Siaga</td>
+                    <td class="tx-right">50.000.000</td>
+                    <td>3</td>
+                    <td>Investasi</td>
+                    <td class="tx-right">
+                        <button class="btn btn-xs btn-primary" ui-sref="admin.financialAnalysis.detailBusiness">
+                            Detail Business
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+<div ui-view></div>
