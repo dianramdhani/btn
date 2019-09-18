@@ -30,12 +30,14 @@
                     <td>50000000</td>
                     <td>3</td>
                     <td>Investasi</td>
-                    <td><button class="btn btn-primary">Detail Business</button></td>
+                    <td>
+                        <button class="btn btn-xs btn-primary" ui-sref="admin.financialAnalysis.detailBusiness">
+                            Detail Business
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
-<div class="card">
-    <h6 class="card-header"></h6>
-</div>
+<div ui-view></div>
