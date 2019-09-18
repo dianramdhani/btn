@@ -43,6 +43,7 @@ require('../views/admin-container/admin-container');
 require('../views/affiliation-checking/affiliation-checking');
 require('../views/financial-analysis/financial-analysis');
 require('../views/detail-business/detail-business');
+require('../views/income-estimate/income-estimate');
 require('../views/collateral-analysis/collateral-analysis');
 require('../views/detail-collateral/detail-collateral');
 require('../views/dashboard/dashboard');
