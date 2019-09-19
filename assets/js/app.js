@@ -27,6 +27,7 @@ window.app = angular.module('BTN', ['ui.router', 'ngCookies', 'datatables']);
 require('../routes/app.route');
 require('../routes/admin.route');
 require('../routes/financial-analysis.route');
+require('../routes/collateral-analysis.route');
 
 // SERVICES
 
@@ -45,5 +46,6 @@ require('../views/financial-analysis/financial-analysis');
 require('../views/detail-business/detail-business');
 require('../views/income-estimate/income-estimate');
 require('../views/collateral-analysis/collateral-analysis');
+require('../views/list-collateral/list-collateral');
 require('../views/detail-collateral/detail-collateral');
 require('../views/dashboard/dashboard');
