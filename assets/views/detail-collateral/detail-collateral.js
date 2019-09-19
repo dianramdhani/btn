@@ -12,14 +12,15 @@ require('./detail-collateral.css');
             controller: _
         });
 
-    _.$inject = ['$scope', '$element', '$sce'];
-    function _($scope, $element, $sce) {
+    _.$inject = ['$scope', '$element', '$sce', 'GOOGLEAPI'];
+    function _($scope, $element, $sce, GOOGLEAPI) {
         let $ctrl = this;
         $ctrl.$onInit = () => {
+            // console.log(GOOGLEAPI.key);
+            $scope.google = {
+                place: $sce.trustAsResourceUrl(`https://www.google.com/maps/embed/v1/place?key=${GOOGLEAPI.key}&q=-6.8777973,107.5453217`),
+                street: $sce.trustAsResourceUrl(`https://www.google.com/maps/embed/v1/streetview?key=${GOOGLEAPI.key}&location=-6.8777973,107.5453217&heading=210&pitch=10&fov=35`)
+            };
         };
-
-        $scope.setSrc = () => {
-            $scope.src = $sce.trustAsResourceUrl(`https://www.google.com/maps/embed/v1/place?key=AIzaSyDrFG56wImrFIxQlgrJY1r5Vop7v0ldhKQ&q=${$scope.lat},${$scope.lng}`)
-        }
     }
 })();

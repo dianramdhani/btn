@@ -1,5 +1,8 @@
 window.app = angular.module('BTN', ['ui.router', 'ngCookies', 'datatables']);
 
+// GOOGLE API
+require('../js/google-api');
+
 // RUN
 (function () {
     'use strict';
