@@ -31,6 +31,7 @@ require('../routes/app.route');
 require('../routes/admin.route');
 require('../routes/financial-analysis.route');
 require('../routes/collateral-analysis.route');
+require('../routes/affiliation-checking.route');
 
 // SERVICES
 
@@ -45,6 +46,8 @@ require('../components/tr-loading/tr-loading');
 require('../views/login/login');
 require('../views/admin-container/admin-container');
 require('../views/affiliation-checking/affiliation-checking');
+require('../views/checking-result/checking-result');
+require('../views/affiliation-detail/affiliation-detail');
 require('../views/financial-analysis/financial-analysis');
 require('../views/detail-business/detail-business');
 require('../views/income-estimate/income-estimate');
