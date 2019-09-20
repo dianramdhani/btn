@@ -1,19 +1,17 @@
-<div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
-    <h4 class="mg-b-0 tx-spacing--1">Collateral Analysis</h4>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item active" aria-current="page">Collateral Analysis</li>
-        </ol>
-    </nav>
-</div>
-<div class="card">
-    <h6 class="card-header">Land and Building Collateral</h6>
+<div class="card mg-t-20">
+    <h6 class="card-header">Detail Collateral</h6>
     <div class="card-body">
         <div class="row row-xs tr-detail-data">
             <div class="col-lg-6">
+                <div class="mg-b-10">
+                    <iframe width="100%" height="280px" frameborder="0" style="border:0" ng-src="{{google.street}}"
+                        allowfullscreen>
+                    </iframe>
+                    <iframe width="100%" height="280px" frameborder="0" style="border:0" ng-src="{{google.place}}"
+                        allowfullscreen></iframe>
+                </div>
                 <p>
-                    <small class="tx-gray-500">Address of Collateral</small>
+                    <small class="tx-gray-500">Address</small>
                     testing
                 </p>
                 <p>
@@ -24,27 +22,96 @@
                     <small class="tx-gray-500">City</small>
                     testing
                 </p>
-                <p>
-                    <small class="tx-gray-500">Images</small>
-                </p>
+                <button class="btn btn-sm btn-primary mg-b-10" type="button" data-toggle="collapse"
+                    data-target="#collapseAdditionalInformation" aria-expanded="false"
+                    aria-controls="collapseAdditionalInformation">
+                    Additional Information
+                </button>
+                <div class="collapse" id="collapseAdditionalInformation">
+                    <p>
+                        <small class="tx-gray-500">Type of Building</small>
+                        testing
+                    </p>
+                    <p>
+                        <small class="tx-gray-500">Certificate</small>
+                        testing
+                    </p>
+                    <p>
+                        <small class="tx-gray-500">Others</small>
+                        testing
+                    </p>
+                </div>
             </div>
             <div class="col-lg-6 order-0">
-                <small class="tx-gray-500">Location</small>
-                <iframe width="100%" height="400px" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=KEY&=-6.8777973,107.5453217"
-                    allowfullscreen>
-                </iframe>
-                <iframe width="100%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/streetview?key=KEY
-                    &location=-6.8777973,107.5453217
-                    &heading=210
-                    &pitch=10
-                    &fov=35" allowfullscreen></iframe>
+                <small class="tx-gray-500">Images</small>
+                <div class="row row-xxs">
+                    <img class="col-lg-4 col-md-6 pd-b-30" src="../../img/inf.png">
+                    <img class="col-lg-4 col-md-6 pd-b-30" src="../../img/inf.png">
+                    <img class="col-lg-4 col-md-6 pd-b-30" src="../../img/inf.png">
+                </div>
             </div>
         </div>
     </div>
+    <div class="card-footer table-responsive">
+        <h6>Value Calculator</h6>
+        <table class="table mg-b-0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="tx-gray-500 text-center">m2</th>
+                    <th class="tx-gray-500 text-center">Value / m2</th>
+                    <th class="tx-gray-500 text-right">Market Value</th>
+                    <th class="tx-gray-500 text-right">Estimated Value</th>
+                    <th class="tx-gray-500 text-center">IMB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Land Area</td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right" placeholder="Land Area (m2)"
+                            title="Land Area (m2)"></td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right"
+                            placeholder="Value Land Area (Value / m2)" title="Value Land Area (Value / m2)">
+                    </td>
+                    <td class="text-right">2000</td>
+                    <td class="text-right">2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Building Area 1</td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right" placeholder="Land Area (m2)"
+                            title="Land Area (m2)"></td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right"
+                            placeholder="Value Land Area (Value / m2)" title="Value Land Area (Value / m2)">
+                    </td>
+                    <td class="text-right">2000</td>
+                    <td class="text-right">2000</td>
+                    <td class="text-center">Yes</td>
+                </tr>
+                <tr>
+                    <td>Building Area 2</td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right" placeholder="Land Area (m2)"
+                            title="Land Area (m2)"></td>
+                    <td>
+                        <input type="text" class="form-control form-control-sm text-right"
+                            placeholder="Value Land Area (Value / m2)" title="Value Land Area (Value / m2)">
+                    </td>
+                    <td class="text-right">2000</td>
+                    <td class="text-right">2000</td>
+                    <td class="text-center">Yes</td>
+                </tr>
+                <tr>
+                    <th class="text-right" colspan="3">Total</th>
+                    <th class="text-right">2000</th>
+                    <th class="text-right">2000</th>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-<!-- <input type="text" ng-model="lat">
-<input type="text" ng-model="lng">
-<button ng-click="setSrc()">set</button>
-<iframe width="600" height="450" frameborder="0" style="border:0" ng-src="{{src}}" allowfullscreen>
-</iframe> -->

@@ -3,3 +3,6 @@ node_modules/
 
 # dist
 assets/dist/
+
+# Google API
+assets/js/google-api.js

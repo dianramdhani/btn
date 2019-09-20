@@ -2,11 +2,11 @@
     'use strict';
 
     window.app
-        .config(UserApp);
+        .config(FinancialAnalysisRoute);
 
-    UserApp.$inject = ['$stateProvider'];
+    FinancialAnalysisRoute.$inject = ['$stateProvider'];
 
-    function UserApp($stateProvider) {
+    function FinancialAnalysisRoute($stateProvider) {
         [
             /**
              * @todo pass param for detailBusiness
